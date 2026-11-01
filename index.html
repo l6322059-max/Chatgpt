@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11131a" />
+  <title>Orbit Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">◉</span><span>orbit<span class="brand-light">chat</span></span></div>
+      <button class="new-chat" id="new-chat">＋ <span>New chat</span></button>
+      <p class="side-label">WORKSPACE</p>
+      <div class="side-item active">✦ <span>Chat</span></div>
+      <div class="side-item">⌕ <span>Explore</span></div>
+      <div class="side-bottom"><div class="avatar">O</div><div><strong>Orbit User</strong><small>Local demo</small></div><span class="settings">⚙</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><span class="mobile-brand">◉ orbitchat</span><span class="model-pill">Orbit · Demo <i></i></span><button class="icon-button" aria-label="More options">···</button></header>
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="orb">◉</div>
+          <p class="eyebrow">YOUR SPACE TO THINK</p>
+          <h1>Where should we<br><em>begin?</em></h1>
+          <p class="subtext">Ask a question, explore an idea, or start something new.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Help me plan a creative project">✧ <span>Plan a creative project</span></button>
+            <button class="suggestion" data-prompt="Explain a difficult topic simply">⌘ <span>Learn something new</span></button>
+            <button class="suggestion" data-prompt="Give me ideas for a website">◈ <span>Brainstorm ideas</span></button>
+          </div>
+        </div>
+      </section>
+      <form class="composer" id="composer">
+        <textarea id="message" rows="1" placeholder="Message Orbit..." aria-label="Message Orbit"></textarea>
+        <div class="composer-footer"><span class="hint">Demo mode · Messages stay in this browser tab</span><button class="send" type="submit" aria-label="Send message">↑</button></div>
+      </form>
+      <p class="disclaimer">Orbit Chat preview · This demo does not connect to an AI service yet.</p>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
